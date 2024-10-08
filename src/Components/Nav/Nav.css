@@ -5,6 +5,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    z-index: 100;
 }
 
 /* Hiding the menu and close icon fro big screen */
