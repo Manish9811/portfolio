@@ -1,0 +1,82 @@
+.homeContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Left content styling */
+
+.homeContainer .leftHomeContent {
+    height: 70%;
+    margin-left: 100px;
+}
+
+.homeContainer .leftHomeContent img {
+    width: 300px;
+}
+
+
+/* Right content of home page */
+
+.homeContainer .rightHomeContent {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeContainer .rightHomeContent .titleText {
+    font-size: 50px;
+}
+
+.homeContainer .rightHomeContent .animatedText span {
+    color: white;
+    font-size: 20px;
+}
+
+.homeContainer .socialLinks {
+    border-top: 1px solid white;
+    margin-top: 60px;
+}
+
+.homeContainer .socialLinks h1 {
+    font-size: 19px;
+}
+
+.homeContainer .socialLinks .appLinks {
+    margin-top: 20px;
+}
+
+.homeContainer .socialLinks .appLinks a {
+    background: white;
+    margin-right: 30px;
+
+}
+
+.homeContainer .socialLinks .appLinks a img {
+    width: 60px;
+    background: grey;
+    border-radius: 20px;
+
+}
+
+/* Responsiveness */
+
+@media screen and (max-width : 780px) {
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        height: 90vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .homeContainer .rightHomeContent {
+        width: 100%;
+    }
+}

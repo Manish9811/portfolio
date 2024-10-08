@@ -1,0 +1,116 @@
+nav {
+    border-bottom: 1px solid white;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Hiding the menu and close icon fro big screen */
+
+.navMenuIcon, .closeNavIcon
+{
+    display: none;
+}
+
+
+nav .rightNavContent
+{
+    width: 500px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+nav .rightContentLinks{
+    width: 200px;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .rightContentLinks a{
+    background: red;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+nav .rightContentLinks a:hover{
+    background: white;
+    color: black;
+    border-radius: 30px;
+}
+
+
+/* Adding css code for responsiveness */
+
+@media screen and (max-width : 780px) {
+
+    nav {
+        height: 80vh;
+        width: 30vw;
+        position: absolute;
+        right: -150%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        /* z-index: -100; */
+    }
+
+    nav .leftNavContent
+    {
+        display: none;
+    }
+
+    nav .rightNavContent
+    {
+        height: 100%;
+        width: 40%;
+        transition: .5s;
+    }
+    nav .showNav 
+    {
+        position: fixed;
+        right: 0%;
+    }
+
+    nav .hideNav 
+    {
+        position: fixed;
+        right: -100%;
+    }
+    nav .rightNavContent .rightContentLinks
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navMenuIcon
+    {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0%;
+        padding: 20px;
+    }
+
+    nav .navCloseIcon 
+    {
+        display: flex;
+        position: absolute;
+        right: 0%;
+        top: 4%;
+        padding: 20px; 
+    }
+}
