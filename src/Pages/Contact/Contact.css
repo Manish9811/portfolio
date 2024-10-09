@@ -50,6 +50,20 @@
     background: green;
     color: white;
 }
+.loader{
+    height: 50px;
+    width: 50px;
+    border: 10px solid red;
+    border-radius: 50px;
+    border-top: 10px solid white;
+    animation: spinner .5s linear infinite;
+}
+@keyframes spinner {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
 
 @media screen and (max-width : 650px){
     .contactContainer form{
