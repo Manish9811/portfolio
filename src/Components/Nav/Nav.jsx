@@ -29,7 +29,7 @@ function Nav() {
                     <Link to='/'>Home</Link>
                     <Link to='/about'>About</Link>
                     <a href={downloadablwfile} download={'https://manishportfolio-32d3882b9f87.herokuapp.com/static/media/profile_image.93c8f6063904abbb4afa.png'}>Resume</a>
-                    <a href="">Connect</a>
+                    <Link to='/contact'>Contact</Link>
 
                 </div>
 
