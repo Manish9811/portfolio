@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Nav.css'
 import { Link } from 'react-router-dom';
-import downloadablwfile from '../../Assests/Images/profile_image.png';
+import resume from '../../Assests/Resume.pdf';
 
 function Nav() {
     const [menuStatus, setMenuStatus] = useState(0);
@@ -28,7 +28,7 @@ function Nav() {
 
                     <Link to='/'>Home</Link>
                     <Link to='/about'>About</Link>
-                    <a href={downloadablwfile} download={'https://manishportfolio-32d3882b9f87.herokuapp.com/static/media/profile_image.93c8f6063904abbb4afa.png'}>Resume</a>
+                    <a href={resume} download={resume}>Resume</a>
                     <Link to='/contact'>Contact</Link>
 
                 </div>
